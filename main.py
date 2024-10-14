@@ -2,12 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-file_path = "Proyecto Final ANM 2024-2.xlsx"  # Asegúrate de que esta ruta sea correcta
-
-# Paso 3: Leer el archivo Excel
+file_path = "Proyecto Final ANM 2024-2.xlsx"
 excel_data = pd.ExcelFile(file_path)
 
-# Cargar la hoja de interés
 sheet_name = 'cumulative-number-of-notable-ai'
 df = pd.read_excel(file_path, sheet_name=sheet_name)
 
